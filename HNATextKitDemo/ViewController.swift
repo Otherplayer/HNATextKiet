@@ -29,17 +29,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     // MARK - 
     
-
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
-    }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notes.count
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Identifier", for: indexPath)
         let note = notes[indexPath.row]
-        cell.textLabel?.text = note.title
+        
+        let font = UIFont.preferredFont(forTextStyle: .headline)
+        let textColor = UIColor(red: 0.175, green: 0.458, blue: 0.831, alpha: 1)
+        let attributes = [
+            NSForegroundColorAttributeName : textColor,
+            NSFontAttributeName : font,
+            NSTextEffectAttributeName : NSTextEffectLetterpressStyle
+        ] as [String : Any]
+        let attributedString = NSAttributedString(string: note.title, attributes: attributes)
+        
+        cell.textLabel?.attributedText = attributedString
         
         return cell
     }

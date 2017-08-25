@@ -14,6 +14,8 @@
 		63ABCA6C1F50080E0082FE79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ABCA6A1F50080E0082FE79 /* LaunchScreen.storyboard */; };
 		63ABCA741F50119B0082FE79 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ABCA731F50119B0082FE79 /* Note.swift */; };
 		63ABCA761F50126D0082FE79 /* NoteEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ABCA751F50126D0082FE79 /* NoteEditorViewController.swift */; };
+		63ABCA781F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 63ABCA771F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png */; };
+		63ABCA7C1F501A000082FE79 /* TimeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ABCA7B1F501A000082FE79 /* TimeIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		63ABCA6D1F50080E0082FE79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63ABCA731F50119B0082FE79 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		63ABCA751F50126D0082FE79 /* NoteEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteEditorViewController.swift; sourceTree = "<group>"; };
+		63ABCA771F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-kit-tutorial-in-swift-5.png"; sourceTree = "<group>"; };
+		63ABCA7B1F501A000082FE79 /* TimeIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,13 @@
 				63ABCA611F50080E0082FE79 /* AppDelegate.swift */,
 				63ABCA631F50080E0082FE79 /* ViewController.swift */,
 				63ABCA751F50126D0082FE79 /* NoteEditorViewController.swift */,
+				63ABCA7B1F501A000082FE79 /* TimeIndicatorView.swift */,
 				63ABCA651F50080E0082FE79 /* Main.storyboard */,
 				63ABCA681F50080E0082FE79 /* Assets.xcassets */,
 				63ABCA6A1F50080E0082FE79 /* LaunchScreen.storyboard */,
 				63ABCA6D1F50080E0082FE79 /* Info.plist */,
 				63ABCA731F50119B0082FE79 /* Note.swift */,
+				63ABCA771F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png */,
 			);
 			path = HNATextKitDemo;
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63ABCA781F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png in Resources */,
 				63ABCA6C1F50080E0082FE79 /* LaunchScreen.storyboard in Resources */,
 				63ABCA691F50080E0082FE79 /* Assets.xcassets in Resources */,
 				63ABCA671F50080E0082FE79 /* Main.storyboard in Resources */,
@@ -147,6 +154,7 @@
 				63ABCA761F50126D0082FE79 /* NoteEditorViewController.swift in Sources */,
 				63ABCA621F50080E0082FE79 /* AppDelegate.swift in Sources */,
 				63ABCA741F50119B0082FE79 /* Note.swift in Sources */,
+				63ABCA7C1F501A000082FE79 /* TimeIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
