@@ -34,6 +34,8 @@ class NoteEditorViewController: UIViewController, UITextViewDelegate {
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(preferredContentSizeChanged(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow(notification:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide(notification:)), name: NSNotification.Name.UIKeyboardDidHide, object: nil)
         
 //        textView.text = note.contents;
 //        textView.font = UIFont.preferredFont(forTextStyle: .body)
@@ -41,6 +43,7 @@ class NoteEditorViewController: UIViewController, UITextViewDelegate {
         self.edgesForExtendedLayout = UIRectEdge.bottom;
         
         createTextView()
+        textView.isScrollEnabled = true
         
         timeView = TimeIndicatorView(date: note.timestamp)
         textView.addSubview(timeView)
@@ -105,6 +108,21 @@ class NoteEditorViewController: UIViewController, UITextViewDelegate {
         timeView.frame = timeView.frame.offsetBy(dx: textView.frame.width - timeView.frame.width, dy: 0)
         let exclusionPath = timeView.curvePathWithOrigin(origin: timeView.center)
         textView.textContainer.exclusionPaths = [exclusionPath]
+    }
+    
+    // MARK: -
+    
+    func updateTextViewSizeForKeyboardHeight(keyboardHeight: CGFloat) {
+        textView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - keyboardHeight)
+    }
+    @objc func keyboardDidShow(notification: NSNotification) {
+        if let rectValue = notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue {
+            let keyboardSize = rectValue.cgRectValue.size
+            updateTextViewSizeForKeyboardHeight(keyboardHeight: keyboardSize.height)
+        }
+    }
+    @objc func keyboardDidHide(notification: NSNotification) {
+        updateTextViewSizeForKeyboardHeight(keyboardHeight: 0)
     }
     
 
