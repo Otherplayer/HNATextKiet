@@ -27,7 +27,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
 
 
-    // MARK - 
+    // MARK: - UITableViewDataSource
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notes.count
@@ -36,16 +36,18 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "Identifier", for: indexPath)
         let note = notes[indexPath.row]
         
-        let font = UIFont.preferredFont(forTextStyle: .headline)
-        let textColor = UIColor(red: 0.175, green: 0.458, blue: 0.831, alpha: 1)
-        let attributes = [
-            NSForegroundColorAttributeName : textColor,
-            NSFontAttributeName : font,
-            NSTextEffectAttributeName : NSTextEffectLetterpressStyle
-        ] as [String : Any]
-        let attributedString = NSAttributedString(string: note.title, attributes: attributes)
+//        let font = UIFont.preferredFont(forTextStyle: .headline)
+//        let textColor = UIColor(red: 0.175, green: 0.458, blue: 0.831, alpha: 1)
+//        let attributes = [
+//            NSForegroundColorAttributeName : textColor,
+//            NSFontAttributeName : font,
+//            NSTextEffectAttributeName : NSTextEffectLetterpressStyle
+//        ] as [String : Any]
+//        let attributedString = NSAttributedString(string: note.title, attributes: attributes)
+//        
+//        cell.textLabel?.attributedText = attributedString
         
-        cell.textLabel?.attributedText = attributedString
+        cell.textLabel?.text = note.title
         
         return cell
     }
@@ -62,23 +64,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             }
         }
     }
-    
-    
-    
-    
-    
-    
-    
-//    ios 6
-    
-//    UILabel UITextField UITextView  UIWebView
-//    
-//         TextKit                    WebKit
-//    
-//                    CoreText
-//    
-//                 Core Graphics
-    
     
     
     
