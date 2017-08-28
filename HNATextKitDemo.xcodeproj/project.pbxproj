@@ -16,6 +16,10 @@
 		63ABCA761F50126D0082FE79 /* NoteEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ABCA751F50126D0082FE79 /* NoteEditorViewController.swift */; };
 		63ABCA781F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 63ABCA771F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png */; };
 		63ABCA7C1F501A000082FE79 /* TimeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ABCA7B1F501A000082FE79 /* TimeIndicatorView.swift */; };
+		63ABCA7E1F501DDF0082FE79 /* text-kit-tutorial-in-swift-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 63ABCA7D1F501DDF0082FE79 /* text-kit-tutorial-in-swift-13.png */; };
+		63ABCA811F501E340082FE79 /* ios6-text-kit-tutorial-in-swift-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63ABCA7F1F501E340082FE79 /* ios6-text-kit-tutorial-in-swift-1.png */; };
+		63ABCA821F501E340082FE79 /* ios7-text-kit-tutorial-in-swift-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63ABCA801F501E340082FE79 /* ios7-text-kit-tutorial-in-swift-2.png */; };
+		63ABCA841F501FDF0082FE79 /* SyntaxHighlightTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ABCA831F501FDF0082FE79 /* SyntaxHighlightTextStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		63ABCA751F50126D0082FE79 /* NoteEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteEditorViewController.swift; sourceTree = "<group>"; };
 		63ABCA771F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-kit-tutorial-in-swift-5.png"; sourceTree = "<group>"; };
 		63ABCA7B1F501A000082FE79 /* TimeIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIndicatorView.swift; sourceTree = "<group>"; };
+		63ABCA7D1F501DDF0082FE79 /* text-kit-tutorial-in-swift-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-kit-tutorial-in-swift-13.png"; sourceTree = "<group>"; };
+		63ABCA7F1F501E340082FE79 /* ios6-text-kit-tutorial-in-swift-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios6-text-kit-tutorial-in-swift-1.png"; sourceTree = "<group>"; };
+		63ABCA801F501E340082FE79 /* ios7-text-kit-tutorial-in-swift-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios7-text-kit-tutorial-in-swift-2.png"; sourceTree = "<group>"; };
+		63ABCA831F501FDF0082FE79 /* SyntaxHighlightTextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntaxHighlightTextStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +74,16 @@
 				63ABCA631F50080E0082FE79 /* ViewController.swift */,
 				63ABCA751F50126D0082FE79 /* NoteEditorViewController.swift */,
 				63ABCA7B1F501A000082FE79 /* TimeIndicatorView.swift */,
+				63ABCA831F501FDF0082FE79 /* SyntaxHighlightTextStorage.swift */,
 				63ABCA651F50080E0082FE79 /* Main.storyboard */,
 				63ABCA681F50080E0082FE79 /* Assets.xcassets */,
 				63ABCA6A1F50080E0082FE79 /* LaunchScreen.storyboard */,
 				63ABCA6D1F50080E0082FE79 /* Info.plist */,
 				63ABCA731F50119B0082FE79 /* Note.swift */,
+				63ABCA7F1F501E340082FE79 /* ios6-text-kit-tutorial-in-swift-1.png */,
+				63ABCA801F501E340082FE79 /* ios7-text-kit-tutorial-in-swift-2.png */,
 				63ABCA771F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png */,
+				63ABCA7D1F501DDF0082FE79 /* text-kit-tutorial-in-swift-13.png */,
 			);
 			path = HNATextKitDemo;
 			sourceTree = "<group>";
@@ -138,8 +150,11 @@
 			files = (
 				63ABCA781F5015DB0082FE79 /* text-kit-tutorial-in-swift-5.png in Resources */,
 				63ABCA6C1F50080E0082FE79 /* LaunchScreen.storyboard in Resources */,
+				63ABCA821F501E340082FE79 /* ios7-text-kit-tutorial-in-swift-2.png in Resources */,
+				63ABCA7E1F501DDF0082FE79 /* text-kit-tutorial-in-swift-13.png in Resources */,
 				63ABCA691F50080E0082FE79 /* Assets.xcassets in Resources */,
 				63ABCA671F50080E0082FE79 /* Main.storyboard in Resources */,
+				63ABCA811F501E340082FE79 /* ios6-text-kit-tutorial-in-swift-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63ABCA841F501FDF0082FE79 /* SyntaxHighlightTextStorage.swift in Sources */,
 				63ABCA641F50080E0082FE79 /* ViewController.swift in Sources */,
 				63ABCA761F50126D0082FE79 /* NoteEditorViewController.swift in Sources */,
 				63ABCA621F50080E0082FE79 /* AppDelegate.swift in Sources */,

@@ -28,7 +28,7 @@ class Note: NSObject {
 
 // some default notes to play with
 var notes = [
-    Note(text: "Shopping List\r\r1. Cheese\r2. Biscuits\r3. Sausages\r4. IMPORTANT Cash for going out!\r5. -potatoes-\r6. A copy of iOS8 by tutorials\r7. A new iPhone\r8. A present for mum"),
+    Note(text: "Shopping List\r\r1. Cheese\r2. Biscuits\r3. Sausages\r4. *IMPORTANT* Cash for going out!\r5. -potatoes-\r6. A copy of iOS8 by tutorials\r7. A new iPhone\r8. A present for mum"),
     Note(text: "Meeting notes\rA long and drawn out meeting, it lasted hours and hours and hours!"),
     Note(text: "Perfection is achieved not when there is nothing left to add ... \n\nPerfection is achieved not when there is nothing left to add, but when there is nothing left to take away - Antoine de Saint-Exupery"),
     Note(text: "Notes on Swift\nThis new language from Apple is changing iOS development as we know it!"),
